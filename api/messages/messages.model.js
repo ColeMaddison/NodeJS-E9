@@ -5,7 +5,7 @@ const MessagesSchema = new Schema({
     username: {type: String},
     message: {type: String},
     show: {type: Date, expires: 0, index: -1},
-    // addedAt: {type: Date, default: Date.now}
+    addedAt: {type: Date, default: Date.now}
 }, {
     timestamps: true,
     collection: "MessagesCollection"
